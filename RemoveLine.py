@@ -19,12 +19,8 @@ if __name__ == '__main__':
     else:
         listdir(sys.argv[1])
 
-#print(mylist)
-
+        
 for myPath in mylist:
-    #f = open(myPath, 'w')
-    print(myPath)
-    #print(myPath[-4:] == 'java')
+    #print(myPath)
     if myPath[-4:] == 'java':
         subprocess.call(['sed', '-i', '1d', './' + myPath])
-    #f.close()
